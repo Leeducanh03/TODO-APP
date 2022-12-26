@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(to left, rgb(96, 210, 210), rgb(78, 144, 228))
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heard {
+        width: 400px;
+        height: 500px;
+        padding: 35px;
+        background-color: azure;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-family: Verdana;
+    }
+
+    input {
+        width: 290px;
+        height: 35px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid silver;
+        outline: none;
+        border-radius: 3px;
+    }
+
+    .ip-btn button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .todo-list {
+        width: 300px;
+        height: 250px;
+        margin-bottom: 10px;
+        
+    }
+
+    .todo-list p {
+        height: 35px;
+        margin-bottom: 15px;
+        padding: 7px;
+        background-color: rgb(151, 165, 165);
+
+    }
+
+    .todo-list i {
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+        margin-left: 295px;
+        background-color: rgba(238, 80, 80, 0.822);
+        color: rgba(230, 230, 230, 0.863);
+        position: absolute;
+    }
+
+    .status-delete span {
+        font-size: 16px;
+        margin-right: 45px;
+        font-family: Verdana;
+    }
+
+    .status-delete button {
+        width: 75px;
+        height: 30px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="heard">
+            <h1>Todo App</h1>
+            <div class="ip-btn">
+                <input type="text" placeholder="App your new todo">
+                <button><i class="fa-sharp fa-solid fa-plus"></i></button>
+            </div>
+            <div class="todo-list">
+            </div>
+            <div class="status-delete">
+                <span>You have 4 pending tasks</span>
+                <button>Clear All</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
